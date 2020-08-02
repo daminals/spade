@@ -3,10 +3,13 @@
     "version": "1.0",
     "description": "Let's call a spade a spade",
 	"permissions": ["storage"],
-	"background": {
-		"scripts": ["spade.js"],
-		"persistent": false
-	},
+	"content_scripts": [
+		{
+		"matches": ["*://*/*"],
+		"js": ["spade.js"],
+		"run_at": "document_end"
+				}
+	],
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "spade"},
