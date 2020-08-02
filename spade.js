@@ -12,6 +12,7 @@ for (var i = 0; i < elements.length; i++) {
 
 			//all of the words where a spade should be called a spade
             var replacedText = text.replace(/alt-right/gi, 'neo nazi');
+			var replacedText = replacedText.replace(/alt right/gi, 'neo nazi');
 			var replacedText = replacedText.replace(/alternative right/gi, 'neo nazi');
 			var replacedText = replacedText.replace(/identitarian/gi, 'neo nazi');
 
